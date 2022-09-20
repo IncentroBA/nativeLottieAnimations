@@ -1,0 +1,31 @@
+{
+    "name": "nativelottieanimations",
+    "widgetName": "NativeLottieAnimations",
+    "version": "1.0.0",
+    "description": "Add Native Lottie JSON Animations",
+    "copyright": "2022 Incentro",
+    "author": "Rob Duits",
+    "engines": {
+        "node": ">=16"
+    },
+    "license": "MIT",
+    "config": {
+        "projectPath": "../../"
+    },
+    "packagePath": "Incentro",
+    "scripts": {
+        "start": "pluggable-widgets-tools start:native",
+        "build": "pluggable-widgets-tools build:native",
+        "lint": "pluggable-widgets-tools lint",
+        "lint:fix": "pluggable-widgets-tools lint:fix",
+        "prerelease": "npm run lint",
+        "release": "pluggable-widgets-tools release:native"
+    },
+    "devDependencies": {
+        "@mendix/pluggable-widgets-tools": "^9.17.0"
+    },
+    "dependencies": {
+        "lottie-ios": "^3.4.3",
+        "lottie-react-native": "^5.1.4"
+    }
+}
