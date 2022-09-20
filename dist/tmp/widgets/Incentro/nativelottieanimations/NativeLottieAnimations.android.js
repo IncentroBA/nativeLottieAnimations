@@ -1,7 +1,6 @@
 import { Dimensions, View } from 'react-native';
 import { useState, useEffect, createElement } from 'react';
 import LottieView from 'lottie-react-native';
-import { mergeNativeStyles } from '@mendix/pluggable-widgets-tools';
 
 const defaultStyle = {
   container: {},
@@ -36,7 +35,7 @@ function NativeLottieAnimations({
   imageWidth
 }) {
   const [visible, setVisible] = useState(false);
-  const styles = mergeNativeStyles(defaultStyle, style);
+  const styles = defaultStyle;
   const useFullPage = imageFullPage === true ? styles.fullContainer : styles.container;
   const containerStyle = useAsLoader === true ? styles.loader : useFullPage;
   const setImageStye = imageFullPage === false ? {

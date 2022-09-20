@@ -1,7 +1,6 @@
 {
   "nativeDependencies": {
     "lottie-react-native": "5.1.4",
-    "@mendix/pluggable-widgets-tools": "9.17.0",
     "lottie-ios": "3.4.3"
   }
 }
