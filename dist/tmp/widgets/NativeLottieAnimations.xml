@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="proximus.nativelottieanimations.NativeLottieAnimations" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Lottie Animations</name>
+    <description>Add Native Lottie JSON Animations</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="lottieFile" type="string" multiline="true" required="true">
+                <caption>lottie JSON</caption>
+                <description></description>
+            </property>
+            <property key="useAsLoader" type="boolean" defaultValue="false">
+                <caption>Use as Loader</caption>
+                <description>Use the widget as custom loading animation. This visually puts the widget on top of the content.</description>
+            </property>
+            <property key="fileVisibility" type="attribute" required="false">
+                <caption>file visibility</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="Boolean"/>
+                </attributeTypes>
+            </property>
+            <property key="imageHeight" type="integer" defaultValue="200">
+                <caption>Height</caption>
+                <description/>
+            </property>
+            <property key="imageWidth" type="integer" defaultValue="200">
+                <caption>Width</caption>
+                <description/>
+            </property>
+            <property key="imageFullPage" type="boolean" defaultValue="false">
+                <caption>full page size</caption>
+                <description>Ignore width and height inputs and grow to max. available space.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
