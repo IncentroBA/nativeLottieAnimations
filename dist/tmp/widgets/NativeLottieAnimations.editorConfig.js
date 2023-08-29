@@ -3,10 +3,8 @@
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-
 function getProperties(values, defaultProperties) {
   // Do the values manipulation here to control the visibility of properties in Studio and Studio Pro conditionally.
-
   /* Example
   if (values.myProperty === "custom") {
       delete defaultProperties.properties.myOtherProperty;
@@ -15,13 +13,11 @@ function getProperties(values, defaultProperties) {
   if (values.useAsLoader === false) {
     delete defaultProperties.properties.fileVisibility;
   }
-
   return defaultProperties;
 }
-
 function check(values) {
-  var errors = []; // Add errors to the above array to throw errors in Studio and Studio Pro.
-
+  var errors = [];
+  // Add errors to the above array to throw errors in Studio and Studio Pro.
   /* Example
   if (values.myProperty !== "custom") {
       errors.push({
@@ -31,10 +27,8 @@ function check(values) {
       });
   }
   */
-
   return errors;
 }
-
 function getPreview() {
   return {
     type: "Image",
@@ -43,7 +37,6 @@ function getPreview() {
     height: 30
   };
 }
-
 exports.check = check;
 exports.getPreview = getPreview;
 exports.getProperties = getProperties;

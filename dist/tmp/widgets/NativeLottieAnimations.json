@@ -1,6 +1,5 @@
 {
   "nativeDependencies": {
-    "lottie-react-native": "5.1.4",
-    "lottie-ios": "3.4.3"
+    "lottie-react-native": "6.2.0"
   }
 }

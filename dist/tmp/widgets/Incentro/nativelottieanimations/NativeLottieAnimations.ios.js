@@ -51,7 +51,6 @@ function NativeLottieAnimations({
       setVisible(true);
     }
   }, [fileVisibility, visible]);
-
   if (lottieFile) {
     return createElement(View, {
       style: visible ? containerStyle : styles.hidden
